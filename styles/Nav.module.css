@@ -1,0 +1,13 @@
+.navBar {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.navBar > li {
+    padding: 0.5em;
+}
+
+.logo {
+    padding-right: 2em;
+    color: red;
+}
