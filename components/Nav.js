@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react';
-import navStyles from '../styles/Nav.module.css';
+// import navStyles from '../styles/Nav.module.css';
 
 
 
@@ -8,20 +8,20 @@ import navStyles from '../styles/Nav.module.css';
 const Nav = () => {
     
     return (
-        <header>
-            <nav>
-                <ul className={navStyles.navBar}>
+        <header class="container mx-auto pt-5 font-serif font-normal w-3/4">
+            <nav class="flex justify-between">
                 <div>
-                     <Link href="/" className={navStyles.logo}>eche</Link>
+                     <Link href="/">eche</Link>
                 </div>
+                <ul class="flex flex-row">
                 
-                  <li>
+                  <li class="pr-5">
                       <Link href="/blog">blog</Link>
                   </li>
-                  <li>
+                  <li class="pr-5">
                       <Link href="/snippet">snippet</Link>
                   </li>
-                  <li>
+                  <li class="pr-5">
                       <Link href="/exercise">exercise</Link>
                   </li>
                 </ul>
